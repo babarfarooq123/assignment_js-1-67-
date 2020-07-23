@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 9</title>
+</head>
+<body>
+    <!-- cha 43-48 -->
+    <!-- 1 -->
+    <a href="javascript:void(0);" onclick="alert('Hello')">Click to Show alert</a><br/>
+    <!-- 2 -->
+    <h2 style="color: rgb(20, 173, 224);">Mobile Phone Lookup</h2>
+    <img style="margin-right: 3px;" src="./pic1.jpg" alt="PIC 1" onclick="alert('Thanks for Purchasing a Phone from us')" width="200px" height="200px">
+    <img style="margin-right: 3px;" src="./pic2.webp" alt="PIC 2" onclick="alert('Thanks for Purchasing a Phone from us')" width="200px" height="200px">
+    <img src="./pic3.png" alt="PIC 3" onclick="alert('Thanks for Purchasing a Phone from us')" width="200px" height="200px"><br />
+    <!-- 3 -->
+    <table>
+        <th>
+            <td>Index</td>
+            <td>Name</td>
+            <td>Class</td>
+        </th>
+        <tr id="0">
+            <td>0</td>
+            <td>Ali</td>
+            <td>3</td>
+            <td><button onclick="del('0')">Delete</button></td>
+        </tr>
+        <tr id="1">
+            <td>1</td>
+            <td>Aizaz</td>
+            <td>5</td>
+            <td><button onclick="del('1')">Delete</button></td>
+        </tr>
+        <tr id="2">
+            <td>2</td>
+            <td>Sufyan</td>
+            <td>7</td>
+            <td><button onclick="del('2')">Delete</button></td>
+        </tr>
+        <tr id="3">
+            <td>3</td>
+            <td>Hamza</td>
+            <td>9</td>
+            <td><button onclick="del('3')">Delete</button></td>
+        </tr>
+        <tr id="4">
+            <td>4</td>
+            <td>Khizer</td>
+            <td>11</td>
+            <td><button onclick="del('4')">Delete</button></td>
+        </tr>
+        <tr id="5">
+            <td>5</td>
+            <td>Hannan</td>
+            <td>2</td>
+            <td><button onclick="del('5')">Delete</button></td>
+        </tr>
+        <tr id="6">
+            <td>6</td>
+            <td>Abdul</td>
+            <td>4</td>
+            <td><button onclick="del('6')">Delete</button></td>
+        </tr>
+        <tr id="7">
+            <td>7</td>
+            <td>Imran</td>
+            <td>6</td>
+            <td><button onclick="del('7')">Delete</button></td>
+        </tr>
+        <tr id="8">
+            <td>8</td>
+            <td>Junaid</td>
+            <td>8</td>
+            <td><button onclick="del('8')">Delete</button></td>
+        </tr>
+        <tr id="9">
+            <td>9</td>
+            <td>Bilal</td>
+            <td>10</td>
+            <td><button onclick="del('9')">Delete</button></td>
+        </tr>
+    </table>
+
+    <!-- 4 -->
+    <h3>Image will Toggle on Mouse Over and Mouse Out</h3>
+    <img id="msvOO" src="./tree1.webp" width="200px" height="200p" onmouseover="musover('msvOO')" onmouseout="musout('msvOO')" alt="pic will change">
+    <br />
+
+    <h2 id="count">0</h2>
+    <button onclick="incdec(1)">Increase</button>
+    <button onclick="incdec(-1)">Decrease</button><br/><br>
+
+    <!-- cha 49-52 -->
+    <!-- 1 -->
+    <form action="#">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter Name">
+        <label for="password">Password</label>
+        <input type="text" id="password" placeholder="Enter Password">
+        <input id="prevent" type="submit" value="Submit">
+    </form><br>
+
+    <!-- 2 -->
+    <h2>Detail about Mobile</h2>
+    <p id="see">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aliquam aperiam perspiciatis ea ipsam, odio voluptatum illum beatae repellendus totam.
+        <button onclick="seemore()">See More</button><br><br>
+    </p>
+
+    <!-- 3 -->
+    <table>
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+        </tr>
+    </table>
+    <h2>Add Row in Above table</h2>
+    <input id="inp1" type="text" placeholder="Enter Index">
+    <input id="inp2" type="text" placeholder="Enter Name">
+    <input id="inp3" type="text" placeholder="Enter Class">
+    <button onclick="addToTable()">Add to Table</button>
+
+    <!-- cha 58-67 -->
+    <!-- 1 -->
+    <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content"
+            ><p class="render"> First Name : Alex</p
+            ><p class="render" id="lastName">Last Name: Bank</p
+            ><p class="render"> Email : alexbank@example.com</p
+            ><p class="render"> Country : Pakistan </p
+            ><p class="render"> contact : +92 300 1234567</p
+            ></div
+    </div>
+    <!-- i -->
+    <script src="app.js"></script>
+</body>
+</html>
